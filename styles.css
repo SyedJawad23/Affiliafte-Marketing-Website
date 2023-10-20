@@ -1,0 +1,195 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Croissant+One&family=Libre+Baskerville:wght@400;700&family=Lilita+One&family=Lora&family=Oleo+Script:wght@400;700&family=Ultra&display=swap');
+*{
+    font-family: 'Cinzel', serif;
+font-family: 'Croissant One', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lilita One', cursive;
+font-family: 'Lora', serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://wallpapercave.com/wp/wp8561217.jpg");
+    background-size: COVER;
+    background-repeat: no-repeat;
+}
+
+
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+#img{
+    border-radius: 10%;
+
+}
+
+#btn{
+    height: 40PX;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+background-color: goldenrod;
+color: white;
+width: 100%;
+margin: 0px;
+font-size: 15px;
+transition: 0.2s 0.2s ease-in-out;
+}
+#btn:hover{
+    background-color: red;
+    color: white;
+}
+#btn a{
+    font-size: 30px;
+}
+.product {
+    border: 4px;
+    border-color: gainsboro;
+    border-style: solid;
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10%;
+    transition: 0.2s 0.2s ease-in-out;
+    transform: translateY(100%);
+    animation: slide-up 1s forwards;
+}
+
+
+
+
+@keyframes slide-up {
+to {
+    transform: translateY(0);
+}
+}
+.product h2{
+    font-size: 20px;
+}
+.product p{
+    font-size: 10px;
+}
+.product:hover{
+    border: 4px;
+    border-style: solid;
+    background-color:lightpink;
+    border-color: wheat;
+    margin: 5px;
+    
+
+}
+
+.product h2:hover{
+color:white
+}
+#img{
+    height: 150px;
+    width: 200px;
+    }
+
+
+footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+li.nav-item {
+    float: left;
+}
+
+li.nav-item a {
+    display: block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:double;
+
+}
+
+li.nav-item a:hover {
+    background-color:lightskyblue;
+    color: black;
+}
+
+
+#search{
+   float: right;
+   padding: 6px;
+  border: 2px solid;
+  border-radius: 20px;
+  width: 20%;
+
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+
+
+}
+
+
+/* DROPDOWN */
+.navbar select {
+    float: right;
+    margin-top: 5px;
+    padding: 10px;
+    border-style: none;
+    background-color: black;
+    font-size: 20px;
+    text-decoration:double;
+    color: wheat;
+}
+
+.navbar .dropdown {
+    float: left;
+    overflow: hidden;
+    
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown-content a {
+    color: black;
+    background-color: lightskyblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
